@@ -1,7 +1,7 @@
 import { borderRadius, borderWidth } from './src/ui/borders';
 import { screens } from './src/ui/breakpoints';
 import { semantic } from './src/ui/colors';
-import { shadow } from './src/ui/shadows';
+import { semantic as shadow } from './src/ui/shadows';
 import { spacing } from './src/ui/spacing';
 
 /** @type {import('tailwindcss').Config} */
