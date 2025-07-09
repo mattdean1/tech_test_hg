@@ -1,9 +1,9 @@
-import type { TextStyle } from "react-native";
-import { StyleSheet } from "react-native";
+import type { TextStyle } from 'react-native';
+import { StyleSheet } from 'react-native';
 
-import { semantic } from "./colors";
+import { semantic } from './colors';
 
-export const fontFamily = "Figtree";
+export const fontFamily = 'Figtree';
 
 export const baseHeadingStyles: TextStyle = {
   fontFamily,
@@ -19,17 +19,17 @@ export const typographyWeights = StyleSheet.create({
 export type TypographyWeights = keyof typeof typographyWeights;
 
 export const headingStyles = StyleSheet.create({
-  "4xl": {
+  '4xl': {
     ...baseHeadingStyles,
     fontSize: 64,
     lineHeight: 76,
   },
-  "3xl": {
+  '3xl': {
     ...baseHeadingStyles,
     fontSize: 40,
     lineHeight: 48,
   },
-  "2xl": {
+  '2xl': {
     ...baseHeadingStyles,
     fontSize: 32,
     lineHeight: 40,
@@ -64,17 +64,17 @@ export const headingStyles = StyleSheet.create({
 export type HeadingLevels = keyof typeof headingStyles;
 
 export const bodyStyles = StyleSheet.create({
-  "4xl": {
+  '4xl': {
     fontFamily,
     fontSize: 64,
     lineHeight: 76,
   },
-  "3xl": {
+  '3xl': {
     fontFamily,
     fontSize: 28,
     lineHeight: 36,
   },
-  "2xl": {
+  '2xl': {
     fontFamily,
     fontSize: 20,
     lineHeight: 28,
