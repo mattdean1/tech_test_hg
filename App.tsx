@@ -1,4 +1,3 @@
-import { ScreenContent } from '~/components/ScreenContent';
 import { StatusBar } from 'expo-status-bar';
 import { Figtree_400Regular } from '@expo-google-fonts/figtree/400Regular';
 import { Figtree_600SemiBold } from '@expo-google-fonts/figtree/600SemiBold';
@@ -8,6 +7,7 @@ import { useFonts } from 'expo-font';
 
 import './global.css';
 import { Platform } from 'react-native';
+import { SetRateScreen } from '~/flows/onboarding/screens/set-rate';
 
 export default function App() {
   useFonts({
@@ -24,7 +24,7 @@ export default function App() {
           rel="stylesheet"
         />
       )}
-      <ScreenContent title="Home" path="App.tsx"></ScreenContent>
+      <SetRateScreen />
       <StatusBar style="auto" />
     </>
   );
